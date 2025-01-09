@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "npm-run-all dev:init --parallel dev:frontend dev:backend",
-    "dc:dev":"docker compose run -P app",
+    "dc:dev":"docker compose run -iP app;",
+    "dc:fix-missing-convex": "docker compose exec app npm install --force; docker stop $(docker ps -f name=surv| grep node |awk '{print $1}');npm run dev",
     "dc:test":"docker compose exec app npm test",
     "dc:shell": "docker compose exec app bash",
     "dev:frontend": "next dev",
