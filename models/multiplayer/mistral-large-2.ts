@@ -35,7 +35,7 @@ export const mistralLarge2: MultiplayerModelHandler = async (
     },
   });
 
-  const content = completion.choices?.[0].message.content ?? "";
+  const content = (completion.choices?.[0].message.content ?? "")+'';
   const parsedContent = JSON.parse(content);
   const response = await responseSchema.safeParseAsync(parsedContent);
 

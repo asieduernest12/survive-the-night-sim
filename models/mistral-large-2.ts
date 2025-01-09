@@ -40,7 +40,7 @@ export const mistralLarge2: ModelHandler = async (
     },
   });
 
-  const content = completion.choices?.[0].message.content ?? "";
+  const content = (completion.choices?.[0].message.content ?? "")+'';
 
   if (!isJSON(content)) {
     throw new Error("Response received from Mistral is not JSON");
