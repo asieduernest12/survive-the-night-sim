@@ -1,8 +1,8 @@
 import { v } from "convex/values";
-import { api, internal } from "./_generated/api";
-import { Id } from "./_generated/dataModel";
-import { internalMutation, mutation, query } from "./_generated/server";
-import { AI_MODEL_SLUGS, ModelSlug } from "./constants";
+import { api, internal } from "@/convex/_generated/api";
+import { Id } from "@/convex/_generated/dataModel";
+import { internalMutation, mutation, query } from "@/convex/_generated/server";
+import { AI_MODEL_SLUGS, ModelSlug } from "@/convex/constants";
 
 export const testModel = mutation({
   args: {

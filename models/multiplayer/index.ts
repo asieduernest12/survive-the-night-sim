@@ -1,8 +1,8 @@
-import { claude35sonnet } from "./claude-3-5-sonnet";
-import { gemini15pro } from "./gemini-1.5-pro";
-import { gpt4o } from "./gpt-4o";
-import { mistralLarge2 } from "./mistral-large-2";
-import { perplexityLlama31 } from "./mp-perplexity-llama-3.1";
+import { claude35sonnet } from "@/models/multiplayer/claude-3-5-sonnet";
+import { gemini15pro } from "@/models/multiplayer/gemini-1.5-pro";
+import { gpt4o } from "@/models/multiplayer/gpt-4o";
+import { mistralLarge2 } from "@/models/multiplayer/mistral-large-2";
+import { perplexityLlama31 } from "@/models/multiplayer/mp-perplexity-llama-3.1";
 import { ModelSlug } from "@/convex/constants";
 import { errorMessage } from "@/lib/utils";
 import { ZombieSurvival } from "@/simulator";

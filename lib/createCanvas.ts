@@ -1,4 +1,4 @@
-import { prepareCanvas } from "./prepareCanvas";
+import { prepareCanvas } from "@/lib/prepareCanvas";
 
 export function createCanvas(
   width: number,

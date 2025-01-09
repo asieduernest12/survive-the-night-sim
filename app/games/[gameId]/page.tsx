@@ -1,7 +1,7 @@
 "use client";
 
 import { useQuery } from "convex/react";
-import { Result } from "./result";
+import { Result } from "@/app/games/[gameId]/result";
 import { Page } from "@/components/Page";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";

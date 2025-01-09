@@ -1,6 +1,6 @@
 import { v } from "convex/values";
-import { internalMutation, query } from "./_generated/server";
-import { adminMutationBuilder } from "./users";
+import { internalMutation, query } from "@/convex/_generated/server";
+import { adminMutationBuilder } from "@/convex/users";
 
 const defaultPrompt = `Your task is to play a game.  We will give you a 2d array of characters that represent the game board.  Before the game starts, you have these two tasks:
 

@@ -2,7 +2,7 @@
 
 import { useQuery } from "convex/react";
 import Link from "next/link";
-import Result from "./result";
+import Result from "@/app/result";
 import { Button } from "@/components/ui/button";
 import {
   Table,

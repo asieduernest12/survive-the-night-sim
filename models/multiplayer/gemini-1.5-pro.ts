@@ -1,5 +1,5 @@
 import { type MultiplayerModelHandler } from ".";
-import { calculateTotalCost } from "../pricing";
+import { calculateTotalCost } from "@/models/pricing";
 import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
 
 const responseSchema = {

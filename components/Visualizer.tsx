@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useRenderer } from "./Renderer";
+import { useRenderer } from "@/components/Renderer";
 import { Button } from "@/components/ui/button";
 import {
   AUTO_REPLAY_SPEED,

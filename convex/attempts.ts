@@ -1,8 +1,8 @@
 import { getAuthUserId } from "@convex-dev/auth/server";
 import { v } from "convex/values";
-import { api } from "./_generated/api";
-import { Id } from "./_generated/dataModel";
-import { query } from "./_generated/server";
+import { api } from "@/convex/_generated/api";
+import { Id } from "@/convex/_generated/dataModel";
+import { query } from "@/convex/_generated/server";
 
 export const getUserAttempt = query({
   args: {

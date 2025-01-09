@@ -6,7 +6,7 @@ import {
   calculateTotalCost,
   getPriceForInputToken,
   getPriceForOutputToken,
-} from "./pricing";
+} from "@/models/pricing";
 
 const responseSchema = z.object({
   reasoning: z.string(),

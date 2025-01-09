@@ -1,7 +1,7 @@
-import { isJSON } from "../lib/utils";
+import { isJSON } from "@/lib/utils";
 import { z } from "zod";
-import { ModelHandler } from "./index";
-import { calculateTotalCost } from "./pricing";
+import { ModelHandler } from "@/models/index";
+import { calculateTotalCost } from "@/models/pricing";
 
 const completionSchema = z.object({
   id: z.string(),

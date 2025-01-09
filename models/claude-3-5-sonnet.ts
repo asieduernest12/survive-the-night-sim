@@ -1,7 +1,7 @@
 import { type ModelHandler } from ".";
 import { Anthropic } from "@anthropic-ai/sdk";
 import { z } from "zod";
-import { calculateTotalCost } from "./pricing";
+import { calculateTotalCost } from "@/models/pricing";
 
 const responseSchema = z.object({
   playerCoordinates: z.array(z.number()),

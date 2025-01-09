@@ -1,8 +1,8 @@
-import { entityAt } from "../../lib/entityAt";
-import { type Direction, allDirections, move } from "../Direction";
-import { Entity, EntityType } from "../Entity";
-import { type Position } from "../Position";
-import { type ZombieSurvival } from "../ZombieSurvival";
+import { entityAt } from "@/lib/entityAt";
+import { type Direction, allDirections, move } from "@/simulator/Direction";
+import { Entity, EntityType } from "@/simulator/Entity";
+import { type Position } from "@/simulator/Position";
+import { type ZombieSurvival } from "@/simulator/ZombieSurvival";
 
 export class Zombie extends Entity {
   public static Destructible = true;

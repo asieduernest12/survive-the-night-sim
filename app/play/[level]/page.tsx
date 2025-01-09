@@ -5,7 +5,7 @@ import { ChevronLeftIcon } from "@radix-ui/react-icons";
 import { Authenticated, useMutation, useQuery } from "convex/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import TestMode from "./test-mode";
+import TestMode from "@/app/play/[level]/test-mode";
 import { Map } from "@/components/Map";
 import { Page, PageTitle } from "@/components/Page";
 import { Visualizer } from "@/components/Visualizer";

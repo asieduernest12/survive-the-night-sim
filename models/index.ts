@@ -1,10 +1,10 @@
-import { errorMessage } from "../lib/utils";
-import { ZombieSurvival } from "../simulator";
-import { claude35sonnet } from "./claude-3-5-sonnet";
-import { gemini15pro } from "./gemini-1.5-pro";
-import { gpt4o } from "./gpt-4o";
-import { mistralLarge2 } from "./mistral-large-2";
-import { perplexityLlama31 } from "./perplexity-llama-3.1";
+import { errorMessage } from "@/lib/utils";
+import { ZombieSurvival } from "@/simulator";
+import { claude35sonnet } from "@/models/claude-3-5-sonnet";
+import { gemini15pro } from "@/models/gemini-1.5-pro";
+import { gpt4o } from "@/models/gpt-4o";
+import { mistralLarge2 } from "@/models/mistral-large-2";
+import { perplexityLlama31 } from "@/models/perplexity-llama-3.1";
 import { AI_MODELS } from "@/convex/constants";
 
 export interface ModelHandlerConfig {

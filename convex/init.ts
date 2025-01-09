@@ -1,5 +1,5 @@
-import { internal } from "./_generated/api";
-import { internalMutation } from "./_generated/server";
+import { internal } from "@/convex/_generated/api";
+import { internalMutation } from "@/convex/_generated/server";
 
 export default internalMutation({
   handler: async (ctx) => {

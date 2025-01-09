@@ -1,7 +1,7 @@
-import { assets } from "./Assets";
-import { generateBg } from "./Background";
-import { type RendererEffect, RendererEffectType } from "./Effect";
-import { RendererItem } from "./Item";
+import { assets } from "@/renderer/Assets";
+import { generateBg } from "@/renderer/Background";
+import { type RendererEffect, RendererEffectType } from "@/renderer/Effect";
+import { RendererItem } from "@/renderer/Item";
 import { canvasToImage } from "@/lib/canvasToImage";
 import { prepareCanvas } from "@/lib/prepareCanvas";
 import {

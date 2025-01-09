@@ -1,7 +1,7 @@
 import { v } from "convex/values";
-import { api, internal } from "./_generated/api";
-import { internalMutation, query } from "./_generated/server";
-import { AI_MODELS } from "./constants";
+import { api, internal } from "@/convex/_generated/api";
+import { internalMutation, query } from "@/convex/_generated/server";
+import { AI_MODELS } from "@/convex/constants";
 
 export const runActiveModelsGames = internalMutation({
   handler: async (ctx) => {

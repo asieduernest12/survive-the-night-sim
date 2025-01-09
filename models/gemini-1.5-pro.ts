@@ -1,6 +1,6 @@
 import { type ModelHandler } from ".";
 import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
-import { calculateTotalCost } from "./pricing";
+import { calculateTotalCost } from "@/models/pricing";
 
 interface GeminiResponse {
   boxCoordinates: number[][];

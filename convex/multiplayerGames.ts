@@ -1,16 +1,16 @@
-import { runMultiplayerModel } from "../models/multiplayer";
+import { runMultiplayerModel } from "@/models/multiplayer";
 import {
   Position,
   ZombieSurvival,
   directionFromString,
   move,
-} from "../simulator";
+} from "@/simulator";
 import { type Infer, v } from "convex/values";
-import { api, internal } from "./_generated/api";
-import { Doc } from "./_generated/dataModel";
-import { internalAction, internalMutation, query } from "./_generated/server";
-import { ModelSlug } from "./constants";
-import { multiplayerGameActionValidator } from "./helpers";
+import { api, internal } from "@/convex/_generated/api";
+import { Doc } from "@/convex/_generated/dataModel";
+import { internalAction, internalMutation, query } from "@/convex/_generated/server";
+import { ModelSlug } from "@/convex/constants";
+import { multiplayerGameActionValidator } from "@/convex/helpers";
 import { DEFAULT_REPLAY_SPEED } from "@/constants/visualizer";
 import { ActionType } from "@/simulator/Action";
 import { replay } from "@/simulator/Replay";

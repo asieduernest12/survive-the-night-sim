@@ -1,5 +1,5 @@
-import { type Position } from "./Position";
-import { type VisualEvent, VisualEventType } from "./VisualEvent";
+import { type Position } from "@/simulator/Position";
+import { type VisualEvent, VisualEventType } from "@/simulator/VisualEvent";
 
 export enum EntityType {
   Box,

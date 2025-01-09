@@ -1,5 +1,5 @@
 import { type MultiplayerModelHandler } from ".";
-import { calculateTotalCost } from "../pricing";
+import { calculateTotalCost } from "@/models/pricing";
 import { Anthropic } from "@anthropic-ai/sdk";
 import { z } from "zod";
 

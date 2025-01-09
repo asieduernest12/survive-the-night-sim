@@ -1,8 +1,8 @@
 import { type ModelHandler } from ".";
-import { isJSON } from "../lib/utils";
+import { isJSON } from "@/lib/utils";
 import { Mistral } from "@mistralai/mistralai";
 import { z } from "zod";
-import { calculateTotalCost } from "./pricing";
+import { calculateTotalCost } from "@/models/pricing";
 
 const responseSchema = z.object({
   reasoning: z.string(),

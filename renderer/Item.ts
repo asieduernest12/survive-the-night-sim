@@ -1,4 +1,4 @@
-import { type RendererEffect, type RendererEffectType } from "./Effect";
+import { type RendererEffect, type RendererEffectType } from "@/renderer/Effect";
 import { type Position } from "@/simulator";
 
 export class RendererItem {

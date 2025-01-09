@@ -1,5 +1,5 @@
 import { type MultiplayerModelHandler } from ".";
-import { calculateTotalCost } from "../pricing";
+import { calculateTotalCost } from "@/models/pricing";
 import OpenAI from "openai";
 import { zodResponseFormat } from "openai/helpers/zod";
 import { z } from "zod";

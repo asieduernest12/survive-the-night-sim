@@ -1,5 +1,5 @@
 import { type MultiplayerModelHandler } from ".";
-import { calculateTotalCost } from "../pricing";
+import { calculateTotalCost } from "@/models/pricing";
 import { Mistral } from "@mistralai/mistralai";
 import { z } from "zod";
 

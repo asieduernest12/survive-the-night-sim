@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { useRenderer } from "./Renderer";
+import { useRenderer } from "@/components/Renderer";
 import { ZombieSurvival, type ZombieSurvivalOptions } from "@/simulator";
 import { Action } from "@/simulator/Action";
 import { replay } from "@/simulator/Replay";

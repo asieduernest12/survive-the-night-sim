@@ -1,23 +1,23 @@
-import { runModel } from "../models";
-import { ZombieSurvival } from "../simulator";
+import { runModel } from "@/models";
+import { ZombieSurvival } from "@/simulator";
 import { getAuthUserId } from "@convex-dev/auth/server";
 import { isRateLimitError } from "@convex-dev/rate-limiter";
 import { v } from "convex/values";
-import { api, internal } from "./_generated/api";
-import { Doc } from "./_generated/dataModel";
+import { api, internal } from "@/convex/_generated/api";
+import { Doc } from "@/convex/_generated/dataModel";
 import {
   action,
   internalAction,
   internalMutation,
   mutation,
   query,
-} from "./_generated/server";
-import { rateLimiter } from "./rateLimits";
+} from "@/convex/_generated/server";
+import { rateLimiter } from "@/convex/rateLimits";
 import {
   adminMutationBuilder,
   adminQueryBuilder,
   authenticatedMutation,
-} from "./users";
+} from "@/convex/users";
 
 const LEVELS = [
   {

@@ -1,7 +1,7 @@
-import { canvasToImage } from "../lib/canvasToImage";
-import { createCanvas } from "../lib/createCanvas";
-import { ZombieSurvival } from "../simulator";
-import { assets } from "./Assets";
+import { canvasToImage } from "@/lib/canvasToImage";
+import { createCanvas } from "@/lib/createCanvas";
+import { ZombieSurvival } from "@/simulator";
+import { assets } from "@/renderer/Assets";
 
 export const BITMASK_TO_TILE_INDEX: Record<number, number> = {
   0: 0,

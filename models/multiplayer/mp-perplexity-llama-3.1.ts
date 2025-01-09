@@ -1,6 +1,6 @@
 import { type MultiplayerModelHandler } from ".";
-import { isJSON } from "../../lib/utils";
-import { calculateTotalCost } from "../pricing";
+import { isJSON } from "@/lib/utils";
+import { calculateTotalCost } from "@/models/pricing";
 import { z } from "zod";
 
 const completionSchema = z.object({

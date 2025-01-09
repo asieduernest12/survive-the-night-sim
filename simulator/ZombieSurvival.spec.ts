@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { ZombieSurvival } from "./ZombieSurvival";
+import { ZombieSurvival } from "@/simulator/ZombieSurvival";
 
 test("fails on invalid map", () => {
   expect(() => new ZombieSurvival([])).toThrowError("Map is empty");

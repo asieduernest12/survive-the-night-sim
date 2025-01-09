@@ -1,5 +1,5 @@
-import { type Action, ActionType } from "./Action";
-import { type ZombieSurvival } from "./ZombieSurvival";
+import { type Action, ActionType } from "@/simulator/Action";
+import { type ZombieSurvival } from "@/simulator/ZombieSurvival";
 
 export function replay(
   simulator: ZombieSurvival,

@@ -5,7 +5,7 @@ import {
   customQuery,
 } from "convex-helpers/server/customFunctions";
 import { ConvexError } from "convex/values";
-import { mutation, query } from "./_generated/server";
+import { mutation, query } from "@/convex/_generated/server";
 
 export const viewer = query({
   handler: async (ctx) => {

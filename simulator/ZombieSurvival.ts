@@ -1,12 +1,12 @@
-import { entityAt } from "../lib/entityAt";
-import { Direction, allDirections, move } from "./Direction";
-import { type Entity } from "./Entity";
-import { type Position } from "./Position";
-import { Box } from "./entities/Box";
-import { Landmine } from "./entities/Landmine";
-import { Player } from "./entities/Player";
-import { Rock } from "./entities/Rock";
-import { Zombie } from "./entities/Zombie";
+import { entityAt } from "@/lib/entityAt";
+import { Direction, allDirections, move } from "@/simulator/Direction";
+import { type Entity } from "@/simulator/Entity";
+import { type Position } from "@/simulator/Position";
+import { Box } from "@/simulator/entities/Box";
+import { Landmine } from "@/simulator/entities/Landmine";
+import { Player } from "@/simulator/entities/Player";
+import { Rock } from "@/simulator/entities/Rock";
+import { Zombie } from "@/simulator/entities/Zombie";
 
 export interface ZombieSurvivalOptions {
   multiplayer?: boolean;
