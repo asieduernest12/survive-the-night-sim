@@ -4,6 +4,11 @@ FROM base AS builder
 
 WORKDIR /app
 
+ARG BUILD_PROJECT=true
+
+RUN if [ "$BUILD_PROJECT" = "true" ]; then echo "skip apt installation"; else apt update; apt install -y git xdg-utils watch; fi
+
+COPY .npmrc ./
 COPY package.json ./
 
 RUN npm install --silent
@@ -16,7 +21,10 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
 ENV NEXT_PUBLIC_ENABLE_UNAMI=true
 
-RUN npm run build
+RUN if [ "$BUILD_PROJECT" = "true"]; then npm run build; else echo "running in dev"; fi;
+
+CMD npm run dev
+
 
 FROM base AS runner
 WORKDIR /app
