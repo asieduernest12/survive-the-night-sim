@@ -105,7 +105,7 @@ export async function runMultiplayerModel(
     `Valid Move Locations: ${JSON.stringify(validDirections)}`;
 
   let result;
-  let reasoning: string | null = null;
+  const reasoning: string | null = null;
 
   try {
     switch (modelSlug) {

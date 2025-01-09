@@ -347,7 +347,7 @@ export class ZombieSurvival {
 
   public getState(): string[][] {
     const entities = this.getAllEntities();
-    let result: string[][] = [];
+    const result: string[][] = [];
 
     for (let y = 0; y < this.boardHeight; y++) {
       const item: string[] = [];
